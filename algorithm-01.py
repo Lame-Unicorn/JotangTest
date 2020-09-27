@@ -1,7 +1,6 @@
 n = int(input())
 bridges = []    #(h, x_start, x_end)
 for i in range(n):
-    input()     #eliminate '\n'
     bridges.append(tuple(map(int, input().split())))
 bridges.sort(key = lambda x:x[1])
 blocks = bridges[0][0]
